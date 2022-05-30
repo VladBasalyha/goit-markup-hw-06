@@ -63,19 +63,59 @@
           </button>
           <!-- Налаштування форми -->
           
-          <b>Оставьте свои данные, мы вам перезвоним</b>
+          <strong class="form-registration">Оставьте свои данные, мы вам перезвоним</strong>
           <form class="modal-form" name="contact-form" autocomplete="on">
-            <label for="name" class="modal-form">
-              <span class="label-name">Имя</span>
-              <input type="text" class="input" id="name">
-              <span class="icon-container">
-                <svg width="18" height="18">
-                  <use href="./images/sprite.svg#icon-antenna"></use>
-                </svg>
+            <div class="form-field">
+              <label for="name" class="form-label">
+                Имя
+              </label>
+              <input type="text" class="form-input" name="name" id="name">
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/sprite.svg#icon-person-black"></use>
+              </svg>
+            </div>
 
+            <div class="form-field">
+              <label for="tel" class="form-label">
+                Телефон
+              </label>
+              <input type="tel" class="form-input" name="name" id="tel">
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label for="email" class="form-label">
+                Почта
+              </label>
+              <input type="email" class="form-input" name="name" id="email">
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/sprite.svg#icon-email-black"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label for="comment" class="form-label">
+                Комментарий
+              </label>
+              <textarea class="textarea-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            </div>
+
+            <label for="checkbox-policy" class="checkbox-policy">
+              <input type="checkbox" class="form-policy" id="checkbox-policy">
+              <span class="custom-checkbox">
+                <svg class="custom-checkbox-icon" width="11" height="8">
+                  <use href="./images/sprite.svg#icon-icon-check"></use>
+                </svg>
               </span>
+              <span class="form-policy-description">Соглашаюсь с рассылкой и принимаю <span> 
+                <a href=""> Условия договора </a></span></span>
             </label>
 
+            <button type="submit" class="submit-btn">
+              Отправить
+            </button>
 
           </form>
            
@@ -616,9 +656,24 @@
           </li>
           </ul>
         </div>
+
+          <div class="mailing-wrapper">
+            <h3 class="mailing-offer">Подпишитесь на рассылку</h3>
+            <form action="">
+              <div class="mail-input-wrapper">
+              <label for="email-footer">
+                <input type="email" class="email-input" id="email-footer" placeholder=" ">
+                <span class="mail-mark" > E-mail</span>
+              </label>
+              <button type="submit" class="mailing-btn">Отправить
+                <svg class="icon-telegram" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </div>
+            </button>
+            </form>
+          </div>
           
-        </div>
-      </div>
     </footer>
 
     <script src="./js/modal.js"></script>
