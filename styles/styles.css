@@ -419,6 +419,8 @@ input {
   height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.2);
+
+  z-index: 10;
 }
 
 .backdrop.is-hidden{
@@ -1058,7 +1060,7 @@ color: #FFFFFF;
   justify-content: center;
   background: #2196F3;
   border-radius: 4px;
-  border-color: transparent;  
+  border-color: var(--bg-buttons-color-hover);  
   text-align: center;
   letter-spacing: 0.06em;
   font-family: 'Roboto';
