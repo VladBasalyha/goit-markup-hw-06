@@ -371,6 +371,10 @@ input {
  cursor: pointer;
 }
 
+.form-policy:focus + .custom-checkbox {
+  outline: 2px solid var(--bg-buttons-color-hover);
+}
+
 .custom-checkbox-icon {
   opacity: 0;
   transition: var(--transition-cubic);
